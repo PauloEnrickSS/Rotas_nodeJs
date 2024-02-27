@@ -1,0 +1,49 @@
+					AULA 02
+
+Express
+
+o express.js é um framework rapido e um dos mais utilizaods em conjunto do node.js, faciitando desenvolvimento
+back-end
+
+
+NPM E EXPRESS
+para instalar pe necessario o npm na maquina
+
+npm -v(checar a versão do npm)
+npm install express --save(instalar o express)
+
+-------------------------------------|
+const express = require("express")   |
+const app = express()                |
+                                     |
+app.listen(8081)                     |
+-------------------------------------|
+
+rodar um servidor web
+acessar o diretório e rodar o comando:
+node app.js
+localhost:8081 acessa o "site"
+
+ROTAS
+
+as rotas utilizam um conceito chamado de call back
+
+app.listen(8081, function(){
+    console.log("servidor rodando na porta 8081")
+})
+usado para retornar uma mensagem se o listen funcionar
+
+------------------------------------|
+app.get("/", function(req, res){
+    res.end("Node js")
+})
+comando para criar a rota, req(uire), res(posta)
+/(li
+
+app.get("/cadastrar: ITEM"  item funciona como um parametro
+
+NODEMON
+
+npm install nodemon -g
+elimina  a necessidade de reiniciar o terminal toda vez que fazer uma alteração no programa
+nodemon app.js(para rodar o arquivo)
